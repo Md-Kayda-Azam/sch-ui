@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SchoolCore - Enterprise School Management SaaS</title>
+    <meta name="description" content="Advanced multi-school SaaS dashboard with real-time RBAC, student 360, attendance tracking, dynamic fee management, ledger, examination marksheets, and ranking analytics." />
+    <meta property="og:title" content="SchoolCore - Enterprise School Management SaaS" />
+    <meta property="og:description" content="Advanced multi-school SaaS dashboard with real-time RBAC, student 360, attendance tracking, dynamic fee management, ledger, examination marksheets, and ranking analytics." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function() {
+        try {
+          var savedTheme = localStorage.getItem('app_theme');
+          var isDark = savedTheme === 'dark';
+          var doc = document.documentElement;
+          if (isDark) {
+            doc.classList.add('dark');
+            doc.setAttribute('data-theme', 'dark');
+            doc.style.colorScheme = 'dark';
+          } else {
+            doc.classList.remove('dark');
+            doc.setAttribute('data-theme', 'light');
+            doc.style.colorScheme = 'light';
+          }
+          var colorTheme = localStorage.getItem('app_color_theme') || 'blue';
+          doc.setAttribute('data-color-theme', colorTheme);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 antialiased font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

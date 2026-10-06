@@ -1,0 +1,8 @@
+{
+  "name": "Remix SchoolCore - Enterprise School Management SaaS",
+  "description": "Advanced multi-school SaaS dashboard with real-time RBAC, student 360, attendance tracking, dynamic fee management, ledger, examination marksheets, and ranking analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
